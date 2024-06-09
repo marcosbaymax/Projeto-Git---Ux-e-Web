@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <h1>Olá, mundo!</h1>
-   <h1>Olá, mundo!</h1>
-   <h2>Testando</h2>
+    <div class="container">
+        <h1>Lista de Contatos</h1>
+        <form id="formularioContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <div class="listas">
+            <div class="lista" id="listaFila">
+                <h2>Fila</h2>
+                <ul></ul>
+            </div>
+            <div class="lista" id="listaOrdenada">
+                <h2>Ordem Alfabética</h2>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
